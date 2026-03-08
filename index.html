@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet's Health - Centro Médico Veterinário | Vila Mascote</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#164265', // Azul extraído do logo
+                            light: '#eef2f6',
+                            accent: '#25D366' // Verde WhatsApp
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="bg-brand-blue text-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <img src="logo.png" alt="Logo Pet's Health" class="h-16 rounded-full border-2 border-white shadow-sm">
+                <span class="font-bold text-xl tracking-wide">PET'S HEALTH</span>
+            </div>
+            <nav class="hidden md:flex gap-6 font-semibold text-sm">
+                <a href="#sobre" class="hover:text-gray-300 transition">Quem Somos</a>
+                <a href="#servicos" class="hover:text-gray-300 transition">Serviços</a>
+                <a href="#contato" class="hover:text-gray-300 transition">Contato</a>
+            </nav>
+            <a href="https://wa.me/5511998987721" target="_blank" class="bg-brand-accent hover:bg-green-500 text-white font-bold py-2 px-4 rounded-full transition flex items-center gap-2 text-sm">
+                <i class="fa-brands fa-whatsapp text-lg"></i> Agendar
+            </a>
+        </div>
+    </header>
+
+    <section class="bg-brand-light py-20 px-4 text-center border-b border-gray-200">
+        <div class="container mx-auto max-w-4xl">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-brand-blue mb-6 leading-tight">
+                Tradição, Segurança e Cuidado Completo para o seu Pet na Vila Mascote.
+            </h1>
+            <p class="text-lg text-gray-600 mb-10 max-w-2xl mx-auto">
+                No Centro Médico Veterinário Pet's Health, a saúde do seu melhor amigo é tratada com excelência, tecnologia e muito carinho. Tudo em um só lugar.
+            </p>
+            <a href="https://wa.me/5511998987721" target="_blank" class="inline-block bg-brand-blue hover:bg-blue-900 text-white font-bold text-lg py-4 px-8 rounded-lg shadow-lg transition transform hover:-translate-y-1">
+                <i class="fa-brands fa-whatsapp mr-2"></i> Falar com Atendimento
+            </a>
+        </div>
+    </section>
+
+    <section id="sobre" class="py-16 px-4 bg-white">
+        <div class="container mx-auto max-w-5xl flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2">
+                <h2 class="text-3xl font-bold text-brand-blue mb-6">Quem Somos</h2>
+                <p class="text-gray-600 mb-4 leading-relaxed">
+                    Com anos de experiência prática e milhares de vidas transformadas, nossa equipe alia o conhecimento de quem realmente entende de medicina veterinária a uma estrutura completa e acolhedora.
+                </p>
+                <p class="text-gray-600 leading-relaxed">
+                    Não somos apenas uma clínica, somos o seu porto seguro no bairro. Nosso compromisso é oferecer um atendimento humanizado, focado na prevenção, no diagnóstico preciso e na recuperação rápida do seu pet.
+                </p>
+            </div>
+            <div class="md:w-1/2 bg-gray-200 h-64 rounded-xl flex items-center justify-center text-gray-400 shadow-inner">
+                <i class="fa-solid fa-camera text-4xl mb-2"></i>
+                <span class="ml-3 font-semibold">[Inserir Foto da Clínica/Equipe]</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="py-16 px-4 bg-brand-light border-y border-gray-200">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-3xl font-bold text-center text-brand-blue mb-12">Nossa Estrutura e Serviços</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                    <i class="fa-solid fa-stethoscope text-4xl text-brand-blue mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Clínica Geral</h3>
+                    <p class="text-gray-600 text-sm">Consultas de rotina, check-ups e acompanhamento contínuo para garantir a longevidade e qualidade de vida do seu pet.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                    <i class="fa-solid fa-bed-pulse text-4xl text-brand-blue mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Centro Cirúrgico Próprio</h3>
+                    <p class="text-gray-600 text-sm">Infraestrutura moderna e esterilizada, pronta para atender desde procedimentos de rotina até intervenções complexas.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                    <i class="fa-solid fa-mask-ventilator text-4xl text-brand-blue mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Castração Segura</h3>
+                    <p class="text-gray-600 text-sm">Utilizamos anestesia inalatória, o padrão ouro em segurança, garantindo um despertar suave e riscos minimizados.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                    <i class="fa-solid fa-heart-circle-check text-4xl text-brand-blue mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Cuidados Pós-Cirúrgicos</h3>
+                    <p class="text-gray-600 text-sm">Acompanhamento humanizado e intensivo. Seu pet recebe atenção total até estar pronto para voltar para casa.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                    <i class="fa-solid fa-tooth text-4xl text-brand-blue mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Odontologia Preventiva</h3>
+                    <p class="text-gray-600 text-sm">Limpeza de tártaro completa, evitando infecções, mau hálito e problemas cardíacos decorrentes do acúmulo.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                    <i class="fa-solid fa-pills text-4xl text-brand-blue mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Farmácia Integrada</h3>
+                    <p class="text-gray-600 text-sm">Maior conveniência para você sair da consulta com a medicação exata, garantindo o início imediato do tratamento.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="py-16 px-4 bg-white">
+        <div class="container mx-auto max-w-5xl flex flex-col md:flex-row gap-12 bg-brand-blue text-white rounded-2xl overflow-hidden shadow-2xl">
+            <div class="md:w-1/2 p-10 flex flex-col justify-center">
+                <h2 class="text-3xl font-bold mb-6">Onde Estamos</h2>
+                <p class="mb-8 text-blue-100">Localização privilegiada e de fácil acesso para você e seu pet na Vila Mascote.</p>
+                
+                <div class="space-y-6">
+                    <div class="flex items-start gap-4">
+                        <i class="fa-solid fa-location-dot text-2xl text-blue-300 mt-1"></i>
+                        <div>
+                            <h4 class="font-bold text-lg">Endereço</h4>
+                            <p class="text-blue-100">R. Eng. Jorge Oliva, 466<br>Vila Mascote, São Paulo - SP<br>04362-060</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <i class="fa-solid fa-phone text-2xl text-blue-300 mt-1"></i>
+                        <div>
+                            <h4 class="font-bold text-lg">Telefone</h4>
+                            <p class="text-blue-100">(11) 5031-1345</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <i class="fa-brands fa-whatsapp text-2xl text-brand-accent mt-1"></i>
+                        <div>
+                            <h4 class="font-bold text-lg">WhatsApp</h4>
+                            <p class="text-blue-100">(11) 99898-7721</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/2 min-h-[300px]">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.731454653641!2d-46.663121!3d-23.650839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a5d1c9d2331%3A0xc6d76e4c7d0d0c3e!2sR.%20Eng.%20Jorge%20Oliva%2C%20466%20-%20Vila%20Mascote%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004362-060!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-6 text-center text-sm border-t border-gray-800">
+        <p>&copy; 2026 Centro Médico Veterinário Pet's Health. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
